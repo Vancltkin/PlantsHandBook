@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Category 1">
+        <menu>
+            <item
+                android:id="@+id/c_item1"
+                android:icon="@drawable/ic_smile"
+                android:title="Загрузить данные" />
+            <item
+                android:id="@+id/c_item2"
+                android:icon="@drawable/ic_smile"
+                android:title="Закрыть" />
+            <item
+                android:id="@+id/c_item3"
+                android:icon="@drawable/ic_smile"
+                android:title="Item3" />
+            <item
+                android:id="@+id/c_item4"
+                android:icon="@drawable/ic_smile"
+                android:title="Item4" />
+        </menu>
+    </item>
+
+    <item android:title="Category 2">
+        <menu>
+            <item
+                android:id="@+id/c_item5"
+                android:icon="@drawable/ic_smile"
+                android:title="Item5" />
+            <item
+                android:id="@+id/c_item6"
+                android:icon="@drawable/ic_smile"
+                android:title="Item6" />
+            <item
+                android:id="@+id/c_item7"
+                android:icon="@drawable/ic_smile"
+                android:title="Item7" />
+            <item
+                android:id="@+id/c_item8"
+                android:icon="@drawable/ic_smile"
+                android:title="Item8" />
+        </menu>
+    </item>
+</menu>

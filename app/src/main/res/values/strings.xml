@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerViewPlantsHandBook</string>
+    <string name="add_plant">Добавить растение</string>
+</resources>
