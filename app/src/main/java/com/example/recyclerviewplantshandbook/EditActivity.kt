@@ -24,7 +24,7 @@ class EditActivity : AppCompatActivity() {
         setContentView(binding.root)
         initButtons()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "PlantsHandBook"
+        supportActionBar?.title = "Добавление цветка"
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

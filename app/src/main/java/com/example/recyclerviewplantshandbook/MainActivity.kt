@@ -12,9 +12,9 @@ import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.recyclerviewplantshandbook.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), PlantAdapter.Listener {
     lateinit var binding: ActivityMainBinding
-    private var adapter = PlantAdapter()
+    private var adapter = PlantAdapter(this)
     private var editLauncher: ActivityResultLauncher<Intent>? = null
 
 
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val statusBar = "PlantsHandBook"
+        val statusBar = "Цветочная книга"
         supportActionBar?.title = statusBar
 
         init()
@@ -114,5 +114,11 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+    }
+
+    override fun onClick(plant: Plant) {
+        startActivity(Intent(this,ContentActivity::class.java).apply {
+            putExtra("item", plant)
+        })
     }
 }
